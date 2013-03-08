@@ -1101,4 +1101,20 @@ Requires config_hasDockBattery set to true. -->
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">15</integer>
+
+    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
+         delimited by File.pathSeparator, which defaults to ":" on Android -->
+    <string name="config_deviceHandlersLib" translatable="false"></string>
+
+    <!-- Full qualified name of the class that implements
+         com.android.internal.os.DeviceDockBatteryHandler interface.
+         Requires config_hasDockBattery set to true. -->
+    <string name="config_deviceDockBatteryHandlerLib" translatable="false"></string>
+    <string name="config_deviceDockBatteryHandlerClass" translatable="false"></string>
+
+    <!-- LUN file to be used by legacy USB manager.
+         The existence of this file will be used to determine in the
+         legacy USB manager should be started. -->
+    <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
+
 </resources>
